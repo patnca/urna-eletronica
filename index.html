@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Urna Eletrônica</title>
+</head>
+<body>
+    <div class="urna">
+        <div class="tela">
+            <div class="tela__cima">
+                <div class="tela__esquerda">
+                    <div class="tela__titulo">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+                    <div class="tela__cargo">
+                        <span>VEREADOR</span>
+                    </div>
+                    <div class="tela__numeros">
+                        <div class="tela__num blink"></div>
+                        <div class="tela__num"></div>
+                    </div>
+                    <div class="tela__dados">
+                        NOME: <br>
+                        Partido: <br>
+                        Vice-Prefeito: <br>
+                    </div>
+                </div>
+                <div class="tela__direita">
+                    <div class="tela__image">
+                        <img src="assets/images/84.jpg" alt="">
+                        Prefeito
+                    </div>
+                    <div class="tela__image tela__image--small">
+                        <img src="assets/images/84_2.jpg" alt="">
+                        Vice-Prefeito
+                    </div>                
+                </div>
+            </div>
+            <div class="tela__baixo">
+                Aperte a tecla: <br>
+                CONFIRMA para CONFIRMAR este voto <br>
+                CORRIGE para REINICIAR este voto
+            </div>
+        </div>
+        <div class="teclado">
+            <div class="teclado__linha">
+                <div class="teclado__botao" data-number>1</div>
+                <div class="teclado__botao" data-number>2</div>
+                <div class="teclado__botao" data-number>3</div>
+            </div>
+            <div class="teclado__linha">
+                <div class="teclado__botao" data-number>4</div>
+                <div class="teclado__botao" data-number>5</div>
+                <div class="teclado__botao" data-number>6</div>
+            </div>
+            <div class="teclado__linha">
+                <div class="teclado__botao" data-number>7</div>
+                <div class="teclado__botao" data-number>8</div>
+                <div class="teclado__botao" data-number>9</div>
+            </div>
+            <div class="teclado__linha">
+                <div class="teclado__botao" data-number>0</div>                
+            </div>
+            <div class="teclado__linha">
+                <div class="teclado__botao teclado__botao--branco">BRANCO</div>
+                <div class="teclado__botao teclado__botao--corrige">CORRIGE</div>
+                <div class="teclado__botao teclado__botao--confirma">CONFIRMA</div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="assets/js/etapas.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

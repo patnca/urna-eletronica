@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.urna {
+    background-color: #dbd5c9;
+    padding: 30px;
+    display: flex;
+}
+
+.tela {
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border: 2px solid #555;
+    display: flex;
+    flex-direction: column;
+}
+
+.tela__cima {
+    flex: 1;
+    display: flex;
+
+}
+
+.tela__esquerda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.tela__titulo,
+.tela__cargo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.tela__cargo {
+    justify-content: center;
+}
+
+.tela__numeros{
+    height: 50px;
+}
+
+.tela__num {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid #000;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.blink {
+    animation: blink 1.5s infinite;
+}
+
+.tela__dados {
+    flex: 1;
+    line-height: 30px;
+}
+
+
+.tela__direita {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.tela__image {
+    background-color: #fff;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 14px;
+}
+
+.tela__image img {
+    width: 100%;
+}
+
+.tela__image--small {
+    width: 80%;
+    font-size: 12px;
+}
+
+.tela__baixo {
+    height: 50px;
+    font-size: 14px;
+    border-top: 2px solid #000;
+    padding-left: 10px;
+}
+
+.teclado {
+    margin-left: 30px;
+    background-color: #403a3a;
+}
+
+.teclado__linha {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.teclado__botao {
+    width: 70px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #555;
+}
+
+.teclado__botao--branco {
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+}
+
+.teclado__botao--corrige {
+    background-color: #f09046;
+    color: #000;
+    font-size: 15px;
+}
+
+.teclado__botao--confirma {
+    background-color: #48c079;
+    color: #000;
+    font-size: 15px;
+    height: 50px;
+    width: 90px;
+}
+
+.aviso--grande {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.aviso--fim {
+    font-size: 70px;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes blink {
+    0% {
+        opacity: .2;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .2;
+    }
+}
